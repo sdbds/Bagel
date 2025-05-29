@@ -106,7 +106,7 @@ else {
 
 Write-Output "Installing main requirements"
 
-~/.local/bin/uv pip install --upgrade torch==2.5.1+cu124 psutil
+~/.local/bin/uv pip install --upgrade torch==2.5.1+cu124 psutil packaging
 
 if ($env:OS -ilike "*windows*") {
     ~/.local/bin/uv pip sync requirements-uv.txt --index-strategy unsafe-best-match
